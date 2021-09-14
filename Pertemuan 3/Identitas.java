@@ -2,7 +2,7 @@ public class Identitas {
     public static void main(String[] args){
         String namaDepan = "Abdilah";
         String namaBelakang = "Azam";
-        long nim = 215371440;
+        String nim = "21537144026";
         int angkatan = 2021;
         String programStudi = "S1-Teknologi Informasi";
         String jurusan = "JPTEI";
