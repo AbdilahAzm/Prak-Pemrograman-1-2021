@@ -1,4 +1,4 @@
-public class Identitas {
+public class identitasMahasiswa {
     public static void main(String[] args){
 
         // Variabel Biodata
