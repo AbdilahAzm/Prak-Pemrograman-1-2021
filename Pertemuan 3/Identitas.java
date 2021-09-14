@@ -20,10 +20,12 @@ public class Identitas {
         System.out.println("7. Fakultas         : " + fakultas);
         System.out.println("8. IPK Harapan      : >" + ipkHarapan);
         System.out.println("");
+
+        // bagian deskripsi
         System.out.println("Deskripsi :");
         System.out.println("Halo temen-temen!");
         System.out.print("Perkenalkan nama saya " + namaDepan + " " + namaBelakang + ", ");
-        System.out.print("Saya biasa dipanggil " + namaBelakang + ". ");
+        System.out.print("saya biasa dipanggil " + namaBelakang + ". ");
         System.out.print("NIM saya " + nim + ". \n");
         System.out.print("Saya berasal dari angkatan " + angkatan);
         System.out.print(" dari Program Studi " + programStudi + " " + fakultas + ". \n");
