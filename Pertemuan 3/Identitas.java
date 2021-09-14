@@ -1,13 +1,15 @@
 public class Identitas {
     public static void main(String[] args){
-        String namaDepan = "Abdilah";
+
+        // Variabel Biodata
+        String namaDepan    = "Abdilah";
         String namaBelakang = "Azam";
-        String nim = "21537144026";
-        int angkatan = 2021;
+        String nim          = "21537144026";
+        int    angkatan     = 2021;
         String programStudi = "S1-Teknologi Informasi";
-        String jurusan = "JPTEI";
-        String fakultas = "Fakultas Teknik";
-        double ipkHarapan = 3.5;
+        String jurusan      = "JPTEI";
+        String fakultas     = "Fakultas Teknik";
+        double ipkHarapan   = 3.5d;
 
         System.out.println("-------Identitas Mahasiswa UNY-------");
         System.out.println("");
