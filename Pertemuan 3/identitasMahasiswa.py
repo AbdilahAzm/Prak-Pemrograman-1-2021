@@ -23,9 +23,9 @@ print("")
 # bagian deskripsi
 print("Deskripsi :")
 print("Halo temen-temen!")
-print("Perkenalkan nama saya " + namaDepan + " " + namaBelakang + ", "
-"saya biasa dipanggil " + namaBelakang + ". "
-"NIM saya " + nim + ".")
-print("Saya berasal dari angkatan " + str(angkatan)
-+ " dari Program Studi " + programStudi + " " + fakultas + ".")
+print("Perkenalkan nama saya " + namaDepan + " " + namaBelakang + ",", end=" ")
+print("saya biasa dipanggil " + namaBelakang + ".", end=" ")
+print("NIM saya " + nim + ".")
+print("Saya berasal dari angkatan " + str(angkatan), end=" ")
+print(" dari Program Studi " + programStudi + " " + fakultas + ".")
 print("IPK harapan saya pada semester ini adalah >" + ipkHarapan + ".")
