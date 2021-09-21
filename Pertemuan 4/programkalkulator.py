@@ -7,11 +7,11 @@ def pengurangan(a, b):
 def perkalian(a, b):
     return a * b
   
-def divide(a, b):
+def pembagian(a, b):
     return a / b
 
 def modulus(a, b):
-    return a % b
+    return a % b 
 
 print(":::::::::: Kalkulator Sederhana ::::::::::")
 print()
@@ -60,7 +60,7 @@ elif pilihan == 4:
     nilaiB = int(input("Nilai b : "))
     print("Hasil pembagian dari", end=" ")
     print(nilaiA, "/", nilaiB, "=",
-                    divide(nilaiA, nilaiB))
+                    pembagian(nilaiA, nilaiB))
 
 elif pilihan == 5:
     print("----- Modulus -----")
