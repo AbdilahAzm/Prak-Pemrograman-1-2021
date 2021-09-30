@@ -34,6 +34,9 @@ public class KartuHasilStudi {
         System.out.print("IPK            : ");
         ipk=scan.nextDouble();
         System.out.println();
+
+        //variabel lama studi
+        int lamaStudi = thnLulus - thnMasuk + 1;
         
         // output scan
         System.out.println("======================================");
@@ -43,11 +46,14 @@ public class KartuHasilStudi {
         System.out.println("NIM             : " + nim);
         System.out.println("Program Studi   : " + pStudi);
         System.out.println("Fakultas        : " + fakultas);
-        System.out.println("IPK             : " + ipk + "0");
+        System.out.println("IPK             : " + ipk);
+        System.out.println("Lama Studi      : " + lamaStudi + " tahun");
 
-        // program if, else, else if
-        int lamaStudi = thnLulus - thnMasuk + 1; 
-        if (ipk >= 3.51 && lamaStudi <= 4) {
+        // program if, else, else if 
+        if (ipk > 4.00 || ipk < 0) {
+            System.out.println("Predikat Lulus  : Tidak Valid");
+            System.out.println(end);
+        } else if (ipk >= 3.51 && lamaStudi <= 4) {
             System.out.println("Predikat Lulus  : Dengan Pujian Tertinggi (Summa Cumlaude)");
             System.out.println(end);
         } else if (ipk >= 3.51) {
@@ -65,12 +71,8 @@ public class KartuHasilStudi {
         } else if (ipk < 2.00) {
             System.out.println("Predikat Lulus  : Tidak Lulus");
             System.out.println(end);
-        } else if (ipk > 4.00 && ipk < 0) {
-            System.out.println("Predikat Lulus  : Tidak Valid");
-            System.out.println(end);
-        }
+        } 
 
-        System.out.println("======================================");
         System.out.println();
     }
 }
