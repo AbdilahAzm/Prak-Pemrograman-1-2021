@@ -24,6 +24,7 @@ public class BelajarForPola3 {
                 System.out.println("");
             }
         }
+        scan.close();
     }
     
 }

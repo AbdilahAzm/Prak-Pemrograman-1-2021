@@ -19,5 +19,6 @@ public class BelajarForPola2 {
             }
             System.out.println("");
         } 
+        scan.close();
     }
 }
