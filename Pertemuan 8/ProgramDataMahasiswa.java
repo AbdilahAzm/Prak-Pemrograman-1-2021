@@ -32,25 +32,25 @@ public class ProgramDataMahasiswa {
 
             System.out.println();
             jumlah += ipk[i];
-        }
+        } scan.close();
 
         System.out.println();
-        System.out.println("+---------------------------------------+");
-        System.out.println("|                                       |");
-        System.out.println("|           DATA MAHASISWA UNY          |");
-        System.out.println("|                                       |");
-        System.out.println("+-------+-------------------------------+");
-        System.out.println("|  No\t|  Nama Mahasiswa         IPK\t|");
-        System.out.println("+-------+-------------------------------+");
+        System.out.println("+-----------------------------------------------+");
+        System.out.println("|                                               |");
+        System.out.println("|               DATA MAHASISWA UNY              |");
+        System.out.println("|                                               |");
+        System.out.println("+----------+---------------------+--------------+");
+        System.out.println("|    No\t   |  \tNama Mahasiswa   |      IPK\t|");
+        System.out.println("+----------+---------------------+--------------+");
 
         for(int j = 1; j < i; j++) {
-            System.out.println("|   " + j + "\t|  " + namaMhs[j] + "                 " + ipk[j] + "\t|");
+            System.out.println("|     " + j + "\t   |\t" + namaMhs[j] + "\t\t |      " + ipk[j] + "\t|");
         }
 
-        System.out.println("+-------+-----------------------+-------+");
+        System.out.println("+----------+---------------------+--------------+");
         rerata = jumlah/(i-1);
-        System.out.println("| Rata-rata IPK                 |  " + rerata + "\t|");
-        System.out.println("+-------------------------------+-------+");
+        System.out.println("|        Rata-rata IPK           |     " + rerata + "\t|");
+        System.out.println("+--------------------------------+--------------+");
         System.out.println();
     }
 }
