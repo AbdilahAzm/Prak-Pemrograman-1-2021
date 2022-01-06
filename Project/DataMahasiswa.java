@@ -57,9 +57,16 @@ public class DataMahasiswa extends DataTubuh {
         System.out.println("Nama Lengkap     : " + this.nama);
         System.out.println("NIM              : " + this.nim);
         System.out.println("Dosen Pembimbing : " + this.dosPem);
+        System.out.println("Predikat         :");
         System.out.println("Nilai IPK        : " + this.ipk);
+        if (this.ipk>=3) {
+            System.out.println("Predikat         : Baik Sekali");
+        } else if (this.ipk<3) {
+            System.out.println("Predikat         : Baik");
+        }
         System.out.println("Semester         : " + this.semester);
         System.out.println("Tinggi Badan     : " + this.tinggiBadan + " cm");
         System.out.println("Berat Badan      : " + this.beratBadan + " kg");
+        
     }
 }

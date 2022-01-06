@@ -73,18 +73,24 @@ public class ProgramSiakad {
         String dosPem = scan.nextLine();
         System.out.print("Nilai IPK        = ");
         double ipk = scan.nextDouble();
-        System.out.print("Semester         = ");
-        int semester = scan.nextInt();
-        System.out.print("Tinggi Badan     = ");
-        double tinggi = scan.nextDouble();
-        System.out.print("Berat Badan      = ");
-        double berat = scan.nextDouble();
-        DataMahasiswa inputMahasiswa = new DataMahasiswa(nim, nama, dosPem, ipk, semester);
-        inputMahasiswa.setTinggiBadan(tinggi);
-        inputMahasiswa.setBeratBadan(berat);
-        mahasiswa[jumlahData] = inputMahasiswa;
-        jumlahData++;
-        lihatData();
+        if (ipk > 4) {
+            System.out.println("Nilai IPK harus sama atau dibawah 4.0");
+        } else if (ipk < 0) {
+            System.out.println("Nilai IPK harus sama atau diatas 0.0");
+        } else {
+            System.out.print("Semester         = ");
+            int semester = scan.nextInt();
+            System.out.print("Tinggi Badan     = ");
+            double tinggi = scan.nextDouble();
+            System.out.print("Berat Badan      = ");
+            double berat = scan.nextDouble();
+            DataMahasiswa inputMahasiswa = new DataMahasiswa(nim, nama, dosPem, ipk, semester);
+            inputMahasiswa.setTinggiBadan(tinggi);
+            inputMahasiswa.setBeratBadan(berat);
+            mahasiswa[jumlahData] = inputMahasiswa;
+            jumlahData++;
+            lihatData();
+        }
     }
 
     private void lihatData() {
