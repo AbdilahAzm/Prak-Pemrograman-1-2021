@@ -57,7 +57,6 @@ public class DataMahasiswa extends DataTubuh {
         System.out.println("Nama Lengkap     : " + this.nama);
         System.out.println("NIM              : " + this.nim);
         System.out.println("Dosen Pembimbing : " + this.dosPem);
-        System.out.println("Predikat         :");
         System.out.println("Nilai IPK        : " + this.ipk);
         if (this.ipk>=3) {
             System.out.println("Predikat         : Baik Sekali");
